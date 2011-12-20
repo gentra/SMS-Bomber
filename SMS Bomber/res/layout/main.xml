@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/titlegradient" >
+
+        <ImageView
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@drawable/icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="20dip"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/admob"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Recipient"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/recipient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="6"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/contactsBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Choose" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Messages"
+            android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/messageSum"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Message"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/mesage"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:lines="3" />
+
+    <Button
+        android:id="@+id/sendBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Send" />
+
+    <TextView
+        android:id="@+id/msgStatus"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
